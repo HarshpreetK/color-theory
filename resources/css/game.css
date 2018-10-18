@@ -1,0 +1,44 @@
+
+body{
+  background-image: url(../images/palette.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  width:100%;
+  text-align: center;
+}
+
+body > h1, p{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: black;
+  background-color: rgba(255,255,255,0.5);
+}
+
+div#memory_board{
+	width:100%;
+	padding:24px;
+	margin:0px auto;
+
+}
+div#memory_board > div{
+  border-radius: 10px;
+	width:10%;
+  font-family: 'Montserrat';
+	height:200px;
+	float:left;
+	margin:10px;
+	padding:20px;
+  font-size: 60px;
+	cursor:pointer;
+	text-align:center;
+  margin: 2%;
+}
+
+div#memory_board > div{
+  background-image: url(../images/rgb.jpg);
+}
+
+div#memory_board > img{
+  width: 50px;
+  height: auto;
+}

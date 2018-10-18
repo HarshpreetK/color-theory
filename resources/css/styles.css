@@ -1,8 +1,206 @@
-*{
-  border: 1px solid blue;
+html{
+  font-size: 15px;
+  font-family: "Montserrat" sans-serif;
 }
 
-html{
-  font-size: 16px;
-  font-family: "Montserrat" sans-serif;
+#wrapper{
+  width: 100%;
+}
+
+
+/* ---------------- Header and Nav styles*/
+header{
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.jumbotron-color{
+    background-image: url(../images/banner.jpg);
+    /*background-color: rgba(100,0,100,0.5);*/
+    width:100%;
+    border-radius: 0px;
+    height: 25rem;
+    background-position: left;
+    background-size: cover;
+    margin-top: 1rem;
+}
+
+.jumbotron{
+  padding: 4rem 0rem;
+}
+
+
+.custom-nav{
+  padding: 0.5rem 0rem;
+}
+
+.custom-top-nav{
+  align-items: flex-start !important;
+  margin-top: 2rem;
+  font-size: 1.10rem;
+}
+
+.custom-top-nav > h1{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.navbar{
+  top:0;
+}
+
+.navbar-nav{
+  width:100%;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 3 !important;
+  flex-direction: row  !important;
+}
+
+.navbar-nav > li{
+  padding: 0.25rem;
+}
+
+.colorful-heading{
+  background-color: rgba(0,0,0,0.2);
+  width:50%;
+  position:absolute;
+  margin-left:0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.colorful-heading > span{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.colorful-heading > span{
+  margin-left: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.colorful-heading>span:first-child{
+  color: red;
+}
+
+.colorful-heading>span:last-child{
+  color: purple;
+  font-weight: 700;
+}
+
+.container,
+.container-fluid{
+  width: 100%;
+  padding: 0;
+  margin:0 auto;
+
+}
+
+/*----------------featured styles---------------------- */
+
+.featured-heading{
+  background-color: rgba(0,0,0,0.95);
+  color:white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.featured-content{
+  background-color: rgba(255,255,255,0.6);
+  color:black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 200;
+  text-align: left;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+
+.featured,
+.featured-2{
+  background-attachment: fixed;
+  height:auto;
+  width:100%;
+  background-size: cover;
+  background-position: top;
+  border-bottom: 1.5rem solid violet;
+}
+
+.featured{
+  background-image: url(../images/palette.jpg);
+}
+
+.featured-2{
+  background-image: url(../images/rgb.jpg);
+}
+
+.featured-2 > h1, h2, h3, span{
+  text-align: center;
+}
+
+.featured > h1, h2, h3{
+  font-size: 1.5rem;
+}
+
+.featured > span, p{
+  font-size: 1rem;
+}
+
+.image{
+  width:33.33%;
+  height:200px;
+  background-color: gray;
+  margin: 0 auto;
+}
+
+/*------------------Game styles---------------------*/
+.game-container{
+  background-color: rgba(100, 0, 100, 0.3);
+  display: flex;
+  flex-direction:row;
+}
+
+#game{
+  width:80%;
+  padding: 1rem;
+  margin: auto;
+}
+
+.card{
+  background-color: rgba(0,0,0,0.8);
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 15%;
+  height: 12rem;
+  padding: 1rem;
+  margin: 2rem auto;
+
+  }
+
+
+/*---------------------Static Footer------------------*/
+.footer{
+  background-color: black;
+  color:white;
+  font-size: 0.7rem;
+  height: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+/*SCSS overrides*/
+.col-lg-2.card{
+  flex: 0 0 15%;
+  max-width: 40%;
 }
