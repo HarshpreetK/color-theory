@@ -46,6 +46,15 @@ header{
   padding: 1rem;
 }
 
+a{
+  color: white;
+}
+
+a:hover{
+  color: gray;
+  text-decoration: none;
+}
+
 .navbar{
   top:0;
 }
@@ -76,9 +85,6 @@ header{
 
 .colorful-heading > span{
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-.colorful-heading > span{
   margin-left: 2rem;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
@@ -156,7 +162,6 @@ header{
 .image{
   width:33.33%;
   height:200px;
-  background-color: gray;
   margin: 0 auto;
 }
 
@@ -203,4 +208,33 @@ header{
 .col-lg-2.card{
   flex: 0 0 15%;
   max-width: 40%;
+}
+
+
+/* media queries */
+@media screen and (max-width: 760px){
+  .colorful-heading > span{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .colorful-heading{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  }
+
+  *{
+  text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .featured,
+  .featured-2{
+    background-attachment: scroll;
+  }
+
+
 }
